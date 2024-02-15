@@ -12,5 +12,11 @@ function hideAndShowElement(hiddenElementId,showElementId){
 
 function getRandomAlphabets(){
 
-    
+    const randomNumber = Math.round(Math.random() * 25)
+
+    const alphabetsString = "abcdefghijklmnopqrstuvwxyz"
+
+    const stringInArray = alphabetsString.split("")
+
+    const randomAlphabets = stringInArray[randomNumber].toUpperCase()
 }
