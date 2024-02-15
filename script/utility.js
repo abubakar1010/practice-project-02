@@ -58,3 +58,30 @@ function showElementOnScreen(){
     groundScreen.innerText = alphabets
 
 }
+
+//* step-06: set background
+
+
+function setBackground() {
+
+    const target = document.getElementById("playScreen").innerText
+
+    document.getElementById(target).classList.add('bg-orange-400')
+}
+
+function removeBackground(elementId) {
+
+    const target = document.getElementById(elementId).innerText
+
+    document.getElementById(target).classList.remove('bg-orange-400')
+}
+
+
+//* step-08: update score
+
+function updateScore(elementID, value){
+
+    const getElement = document.getElementById(elementID)
+
+    getElement.innerText = value 
+}

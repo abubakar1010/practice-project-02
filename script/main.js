@@ -8,6 +8,9 @@ enterButton.addEventListener('click', function() {
     hideAndShowElement("homePage","playGround")
 
     showElementOnScreen()
+
+    setBackground()
+
 })
 
 
@@ -18,21 +21,32 @@ document.addEventListener('keyup',function(event){
 
     
 
-    //* detect user Press key
+    //* step-04: track user input and match with random alphabet
 
     const userKey = event.key.toUpperCase()
 
-    console.log(userKey);
-
     const screenKey = document.getElementById('playScreen').innerText
-
-    console.log(screenKey);
 
     if( userKey === screenKey){
 
-        showElementOnScreen()
+    showElementOnScreen()
+
+
+    removeBackground(userKey)
+
+    const initial = document.getElementById('score')
+
+    const initialScore = parseInt(initial.innerText )
+
+    const values = initialScore + 1
+
+    updateScore("score", values)
+
 
     }
+
+    
+    setBackground()
 
 
 })
