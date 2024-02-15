@@ -43,6 +43,21 @@ document.addEventListener('keyup',function(event){
     updateScore("score", values)
 
 
+    }else{
+
+        const initial = document.getElementById('chances')
+
+    const initialScore = parseInt(initial.innerText )
+
+    const values = initialScore - 1
+
+    updateScore("chances", values)
+
+    if( values === 0){
+
+        hideAndShowElement("playGround","finalResult")
+    }
+
     }
 
     
