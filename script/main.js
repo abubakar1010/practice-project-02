@@ -42,6 +42,9 @@ document.addEventListener('keyup',function(event){
 
     updateScore("score", values)
 
+    updateScore("earning", values)
+
+
 
     }else{
 

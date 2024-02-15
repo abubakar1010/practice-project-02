@@ -85,3 +85,13 @@ function updateScore(elementID, value){
 
     getElement.innerText = value 
 }
+
+// * step-11: if user press play again button then go back to playground
+
+function playAgain(){
+
+    hideAndShowElement("finalResult", "playGround")
+
+    updateScore("chances", 5)
+    updateScore("score", 0)
+}
