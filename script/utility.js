@@ -19,4 +19,42 @@ function getRandomAlphabets(){
     const stringInArray = alphabetsString.split("")
 
     const randomAlphabets = stringInArray[randomNumber].toUpperCase()
+
+    return randomAlphabets
+}
+
+/**
+ * step-01: hide home page and show play ground
+
+step-02: generate random numbers and random alphabets 
+
+step-03: show random alphabets On screen
+
+step-04: track user input and match with random number
+
+step-05: if match change alphabets 
+
+step-06: set background
+
+step-07: if match 05 condition then change background according to alphabets
+
+step-08: update score
+
+step-09: if chances is equal to 0 then end game
+
+step-10: show user score 
+
+step-11: if user press play again button then go back to playground
+ */
+
+//* step-03: show random alphabets On screen
+
+function showElementOnScreen(){
+
+    const groundScreen = document.getElementById("playScreen")
+
+    const alphabets = getRandomAlphabets()
+
+    groundScreen.innerText = alphabets
+
 }

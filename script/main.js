@@ -6,4 +6,6 @@ const enterButton = document.getElementById('enterGameButton')
 enterButton.addEventListener('click', function() {
 
     hideAndShowElement("homePage","playGround")
+
+    showElementOnScreen()
 })
