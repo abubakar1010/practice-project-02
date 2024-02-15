@@ -30,7 +30,7 @@ step-02: generate random numbers and random alphabets
 
 step-03: show random alphabets On screen
 
-step-04: track user input and match with random number
+step-04: track user input and match with random alphabet
 
 step-05: if match change alphabets 
 
